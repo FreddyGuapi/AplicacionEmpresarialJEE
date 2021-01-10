@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="TIENDAPU" transaction-type="RESOURCE_LOCAL">
+    <jta-data-source>jdbc/ d7nv6thbf8epjv</jta-data-source>  
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>com.tienda.entidades.Empleado</class>
+    <class>com.tienda.entidades.EstadoCivil</class>
+    <class>com.tienda.entidades.Carga</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://ec2-3-211-149-196.compute-1.amazonaws.com:5432/d7nv6thbf8epjv"/>
+      <property name="javax.persistence.jdbc.user" value="rtzervwpnhestn"/>
+      <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="7fe49e63714880d45112f1eda4370067b044acd0bcb68397c652f248de25a57e"/>
+    </properties>
+  </persistence-unit>
+</persistence>
